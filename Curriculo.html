@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Curriculum Vittae</title>
+  </head>
+  <body>
+    <button type="button" class="btn btn-danger mb-3"><h1>Victor Augusto Honorato Borba Silva</h1></button>
+  <script>
+  var end = new Date('03/24/1986 5:00 PM');
+  
+      var _second = 1000;
+      var _minute = _second * 60;
+      var _hour = _minute * 60;
+      var _day = _hour * 24;
+      var timer;
+  
+      function showRemaining() {
+          var now = new Date();
+          var distance = now - end;
+          if (distance < 0) {
+  
+              clearInterval(timer);
+              document.getElementById('countdown').innerHTML = 'EXPIRED!';
+  
+              return;
+          }
+          var days = Math.floor(distance / _day);
+          var hours = Math.floor((distance % _day) / _hour);
+          var minutes = Math.floor((distance % _hour) / _minute);
+          var seconds = Math.floor((distance % _minute) / _second);
+  
+          document.getElementById('countdown').innerHTML = '<h4 class="mb-1">Brasileiro, solteiro, ' + Math.trunc(days/365) + ' anos, sem filhos.</h4>';
+  
+      }
+  
+      timer = setInterval(showRemaining, 1000);
+  </script>
+  <div id="countdown"></div>
+  <h4 class="mb-1">victor.honor86@gmail.com</h4>
+  <h4 class="mb-1">(62)98332-2404</h4><br><br>
+
+    <button type="button" class="btn btn-danger mb-3"><h1>Formação:</h1></button>
+    <h5 class="mb-1"> Graduação em Tecnologia em Sistemas para Internet. UTFPR. 2022(4ºSemestre)</h5>
+    <!--<h5 class="mb-1"> Graduação em Engenharia Eletrônica. UTFPR. 2020(troca de curso)</h5>
+    <h5 class="mb-1">Pós Graduação em Engenharia Clínica. RTG. 2020</h5>
+    <h5 class="mb-1">Pós Graduação em Engenharia de Segurança do Trabalho. RTG. 2020(Faltam 3 módulos)</h5>-->
+    <h5 class="mb-1">Graduação em Engenharia Civil. PUC de Goiás. 2018</h5>
+    <h5 class="mb-1">Graduação em Química Bacharel. Universidade de Brasília. 2013</h5>
+    <h5 class="mb-1">Treinamento para ONC 2006 SENAI em Eletrônica Industrial SENAI.</h5>
+    <h5 class="mb-1">Técnico em Mecatrônica (18 meses). 2004-2005</h5>
+    <h5 class="mb-1">Eletricista de Manutenção Industrial (180 h). 2004</h5>
+    <h5 class="mb-1"> Eletricista Instalador Predial (150 h). 2003</h5>
+  
+    <button type="button" class="btn btn-danger my-2"><h1>Estágios:</h1></button>    
+  <div class="accordion" id="accordionExample">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-left"" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseOne" 
+          aria-expanded="false" 
+          aria-controls="collapseOne">
+            Estagiário na Myse Sistemas.<br><b>Toledo. (02/2023 – 04/2023)</b>
+          </button>
+        </h5>
+      </div>
+    <div id="collapseOne" 
+    class="collapse" 
+    aria-labelledby="headingOne" 
+    data-parent="#accordionExample">
+        <div class="card-body">
+            <ul>
+            <li>Ajuste de aplicações ERP;</li>
+            <li>Pesquisa em documentação de Java, JavaScript, CSS e HTML;</li>
+            <li>Suporte a clientes sobre as aplicações;</li>
+            <li>Gravação de Tutoriais para clientes em OBS;</li>
+            <li>Uso de GIThub;</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-left" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseTwo" 
+          aria-expanded="false" 
+          aria-controls="collapseTwo">
+            Estagiário na WingCorp Marketing.<br><b> Toledo. (09/2022 – 11/2022)</b>
+          </button>
+        </h5>
+      </div>
+    <div id="collapseTwo" 
+    class="collapse" 
+    aria-labelledby="headingTwo" 
+    data-parent="#accordionExample">
+        <div class="card-body">
+            <ul>
+            <li>Ajuste de Sites na plataforma VTEX;</li>
+            <li>Pesquisa em documentação de JavaScript, CSS e HTML;</li>
+            <li>Desenvolvimento de Planilhas em Excel;</li>
+            <li>Gravação de Tutoriais para clientes em OBS;</li>
+            <li>Uso de FTP e GIThub;</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-left" collapsed" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseThree" 
+          aria-expanded="false" 
+          aria-controls="collapseThree">
+            Estagiário na EMPIA consultoria ambiental.<br><b>Goiânia. (02/2017 – 07/2017)</b>
+            </button>
+        </h5>
+      </div>
+      <div id="collapseThree" 
+      class="collapse" 
+      aria-labelledby="headingThree" 
+      data-parent="#accordionExample">
+        <div class="card-body">
+            <ul>
+            <li>Auxílio em desenvolvimento de Planejamento Municipal de Saneamento Básico;</li>
+            <li>Uso de Autocad para fazer planta baixa, corte e fachada de indústria;</li>
+            <li>Desenvolvimento de planilha com indicadores do SNIS;</li>
+            <li>Alimentação de banco de dados de prefeitura sobre andamento do PMSB;</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingFour">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-left" collapsed" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseFour" 
+          aria-expanded="false" 
+          aria-controls="collapseFour">
+            Estagiário na Goiarte Fábrica de pré-moldados em concreto.<br><b>Aparecida de Goiânia. (03/2015 – 10/2015)</b>
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFour" 
+      class="collapse" 
+      aria-labelledby="headingFour" 
+      data-parent="#accordionExample">
+        <div class="card-body">
+            <ul>
+            <li>Dosagem de concreto em estação controlada com balança e caminhão betoneira;</li>
+            <li>Controle de projeto de armadura de pilares, aduelas e tubos de concreto;</li>
+            <li>Testes de granulometria de areia e teor de material pulverulento;</li>
+            <li>Testes com cor de concreto colorido, avaliação de resistência do paver permeável;</li>
+            <li>Controle de qualidade de testes de resistência a compressão em pavers e blocos de concreto usando tabelas dinâmicas em excel;</li>
+        </ul>
+          </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingFive">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-left" collapsed" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseFive" 
+          aria-expanded="false" 
+          aria-controls="collapseFive">
+              Estagiário na Secretaria Municipal de Saúde.<br><b>Aparecida de Goiânia. (10/2014 – 03/2015)</b> 
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFive" 
+      class="collapse" 
+      aria-labelledby="headingFive" 
+      data-parent="#accordionExample">
+        <div class="card-body">
+          <ul>
+            <li>Levantamentos de locais para UBS e fazendo projeto dos mesmos em autocad com memorial descritivo e laudo assinado por arquiteto;</li>
+            <li>Visita a obras em andamento na saúde por empresas contratadas;</li>
+              <li>Controle de estoque de material a receber por meio de processos, comparando licitações com o que foi recebido;</li>
+              </ul>
+            </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingSix">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-left" collapsed" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapseSix" 
+          aria-expanded="false" 
+          aria-controls="collapseSix">
+              PIBIC no laboratório automação de processos análise química. UNB.<br><b>Brasília(10/2011 – 10/2012)</b>
+          </button>
+        </h5>
+      </div>
+      <div id="collapseSix" 
+      class="collapse" 
+      aria-labelledby="headingSix" 
+      data-parent="#accordionExample">
+        <div class="card-body">
+          <ul>
+          <li>Auxiliando mestrandos e doutores em química a mexer com placas de circuitos eletrônicos;</li>
+          <li>Testes envolvendo amplificadores operacionais para melhorar sensor de fluorimetria;</li>
+          <li>Conserto de equipamento de galvanometria antigo (de 1996) sem manual;</li>
+          </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <button type="button" class="btn btn-danger"><h1>Atuações Profissionais:</h1></button>
+  <div class="accordion" id="accordionEmprego">
+    <div class="card">
+      <div class="card-header" id="heading1">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-left"" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapse1" 
+          aria-expanded="true" 
+          aria-controls="collapse1">
+          Engenheiro Civil Projetista na Secretaria Municipal de Saúde.<br><b>Aparecida de Goiânia. (09/2019 – 06/2022)</b>
+          </button>
+        </h5>
+      </div>
+    <div id="collapse1" 
+    class="collapse" 
+    aria-labelledby="heading1" 
+    data-parent="#accordionEmprego">
+        <div class="card-body">
+            <ul>
+            <li>Criação de Projetos de Planta Baixa em adequação as RDCs e NBRs vigentes;</li>
+            <li>Orçamento de projetos;</li>
+            <li>Vistorias e Medições de Obras da Prefeitura;</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="heading2">
+        <h5 class="mb-0">
+          <button class="btn btn-link text-left"" 
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#collapse2" 
+          aria-expanded="true" 
+          aria-controls="collapse2">
+          Analista de Projetos na Vigilância Sanitária.<br><b>Aparecida de Goiânia. (09/2018 – 09/2019)</b>
+          </button>
+        </h5>
+      </div>
+    <div id="collapse2" 
+    class="collapse" 
+    aria-labelledby="heading2" 
+    data-parent="#accordionEmprego">
+        <div class="card-body">
+            <ul>
+            <li>Análise de Planta Baixa em relação as RDCs e NBRs vigentes;</li>
+            <li>Vistoria a empresas com fiscal para verificação de plantas;</li>
+            <li>Correção de Memoriais Descritivos e Projetos;</li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+    <div class="card-header" id="heading3">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-left"" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapse3" 
+        aria-expanded="true" 
+        aria-controls="collapse3">
+        Técnico de Mecatrônica atuando em manutenção predial no INSS.<br><b>Brasília BSBSystem. (11/2012 – 07/2013)</b>
+        </button>
+      </h5>
+    </div>
+  <div id="collapse3" 
+  class="collapse" 
+  aria-labelledby="heading3" 
+  data-parent="#accordionEmprego">
+      <div class="card-body">
+          <ul>
+          <li>Manutenção de quadros de comando trifásicos com CLP e sem CLP;</li>
+          <li>Manutenção de portão eletrônico e cancela;</li>
+          <li>Manutenção de alarme de incêndio e circuito de interno de TV;</li>
+          <li> Manutenção de ventilador, lâmpada de emergência, scanner, sistema de áudio,
+            fragmentador de papel, cafeteira elétrica e outros aparelhos eletrônicos;</li>
+          <li>Liderar e auxiliar equipe de eletricistas em mudança de local de pontos de tomada,
+            de cabeamento de rede e de lâmpadas;</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="heading4">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-left"" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapse4" 
+        aria-expanded="true" 
+        aria-controls="collapse4">
+        Técnico de Suporte em Hardware atuando em manutenção predial CNPq<br><b>Brasília POLITEC. (04/2010 – 09/2010)</b>
+        </button>
+      </h5>
+    </div>
+  <div id="collapse4" 
+  class="collapse" 
+  aria-labelledby="heading4" 
+  data-parent="#accordionEmprego">
+      <div class="card-body">
+          <ul>
+          <li>Auxiliar equipe de eletricistas em mudança de local de pontos de tomada, de cabeamento de rede e de lâmpadas;</li>
+          <li> Procurar pontos de rede em rack;</li>
+          <li>Preparar com agilidade salas com LAN de computadores para videoconferências;</li>
+          <li>Auxiliar equipe de programação a remanejar máquinas em desuso e instalar novas;</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<button type="button" class="btn btn-danger"><h1>Docência:</h1></button>
+<div class="accordion" id="accordionDocencia">
+  <div class="card">
+    <div class="card-header" id="heading5">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-left"" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapse5" 
+        aria-expanded="true" 
+        aria-controls="collapse5">
+        Eron Domingues<br><b>Marechal Cândido Rondon (03/2023 – Atualmente)</b>
+        </button>
+      </h5>
+    </div>
+  <div id="collapse5" 
+  class="collapse" 
+  aria-labelledby="heading5" 
+  data-parent="#accordionDocencia">
+      <div class="card-body">
+          <ul>
+          <li>Química 1ºC; 1ºD; 1º Formação de Docentes; 1º TDS</li>
+          <li>Matemática II - Programação 2ºB; 2ºC</li>
+         </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="heading6">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-left"" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapse6" 
+        aria-expanded="true" 
+        aria-controls="collapse6">
+        Colégio Cívico Militar<br><b> Marechal Cândido Rondon (05/2023 – Atualmente)</b>
+        </button>
+      </h5>
+    </div>
+  <div id="collapse6" 
+  class="collapse" 
+  aria-labelledby="heading6" 
+  data-parent="#accordionDocencia">
+      <div class="card-body">
+          <ul>
+          <li>Física II - Robótica 2ºB;</li>
+          <li>Matemática II - Programação 2ºB;</li>
+          <li>Pensamento Computacional - 1ºA; 1ºB</li>
+         </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="heading7">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-left"" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapse7" 
+        aria-expanded="true" 
+        aria-controls="collapse7">
+        Colégio Agrícola Multianos Romualdo Peiter<br><b>São Sebastião (03/2023 – Atualmente)</b>
+        </button>
+      </h5>
+    </div>
+  <div id="collapse7" 
+  class="collapse" 
+  aria-labelledby="heading7" 
+  data-parent="#accordionDocencia">
+      <div class="card-body">
+          <ul>
+          <li>Ciências 6º e 7º; 8º e 9º</li>
+         </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="heading8">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-left"" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapse8" 
+        aria-expanded="true" 
+        aria-controls="collapse8">
+        Professor particular de Química, Física e Matemática<br><b>Brasília (09/2007 – 12/2008)</b>
+        </button>
+      </h5>
+    </div>
+  <div id="collapse8" 
+  class="collapse" 
+  aria-labelledby="heading8" 
+  data-parent="#accordionDocencia">
+      <div class="card-body">
+          <ul>
+          <li>Ensino Médio 1º, 2º, 3º, Engenharia Civil</li>
+         </ul>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="heading9">
+      <h5 class="mb-0">
+        <button class="btn btn-link text-left"" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#collapse9" 
+        aria-expanded="true" 
+        aria-controls="collapse9">
+        SENAI/SESI<br><b>Aparecida de Goiânia (05/2006 – 11/2006)</b>
+        </button>
+      </h5>
+    </div>
+  <div id="collapse9" 
+  class="collapse" 
+  aria-labelledby="heading9" 
+  data-parent="#accordionDocencia">
+      <div class="card-body">
+          <ul>
+          <li>Curso de Eletricista Predial</li>
+          <li>Curso de Eletricista Industrial</li>
+          <li>Curso de Automação Industrial</li>
+         </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  </div>
+    </body>
+</html>
